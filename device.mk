@@ -13,10 +13,20 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_system=ext4 \
     POSTINSTALL_OPTIONAL_system=true
 
-# Boot control HAL
+# Устаревший статический HAL отключен
+# PRODUCT_STATIC_BOOT_CONTROL_HAL := \
+#     bootctrl.ums9230 \
+#     libgptutils \
+#     libz \
+#     libcutils
+
+# Включаем динамический HAL и необходимые библиотеки для A/B
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.0-impl \
-    android.hardware.boot@1.0-service
+    android.hardware.boot@1.2-impl \
+    android.hardware.boot@1.2-service \
+    android.hardware.boot@1.2-impl.recovery \
+    bootctrl.ums9230 \
+    libgptutils
 
 PRODUCT_PACKAGES += \
     bootctrl.ums9230
