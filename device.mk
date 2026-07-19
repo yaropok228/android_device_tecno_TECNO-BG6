@@ -26,18 +26,7 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-service \
     android.hardware.boot@1.2-impl.recovery \
     bootctrl.ums9230 \
-    libgptutils
-
-PRODUCT_PACKAGES += \
-    bootctrl.ums9230
-
-#PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-#    bootctrl.ums9230 \
-#    libgptutils \
-#    libz \
-#    libcutils
-
-PRODUCT_PACKAGES += \
+    libgptutils \
     otapreopt_script \
     cppreopts.sh \
     update_engine \
