@@ -6,8 +6,11 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_TECNO_BG6.mk
+    $(LOCAL_DIR)/omni_TECNO_BG6.mk \
+    $(LOCAL_DIR)/twrp_TECNO_BG6.mk
 
 COMMON_LUNCH_CHOICES := \
     omni_TECNO_BG6-eng \
-    omni_TECNO_BG6-userdebug
+    omni_TECNO_BG6-userdebug \
+    twrp_TECNO_BG6-eng \
+    twrp_TECNO_BG6-userdebug
