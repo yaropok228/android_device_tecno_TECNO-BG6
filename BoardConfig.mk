@@ -27,6 +27,7 @@ AB_OTA_PARTITIONS += \
     vendor \
     vendor_dlkm \
     product
+BOARD_INCLUDE_VENDOR_RAMDISK := true
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 
 # Architecture
