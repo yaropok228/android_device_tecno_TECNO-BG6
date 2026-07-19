@@ -15,7 +15,7 @@ $(call inherit-product, vendor/omni/config/common.mk)
 # Inherit from TECNO-BG6 device
 $(call inherit-product, device/tecno/TECNO-BG6/device.mk)
 
-PRODUCT_NAME := omni_TECNO_BG6
+PRODUCT_NAME := twrp_TECNO_BG6
 PRODUCT_DEVICE := TECNO_BG6
 PRODUCT_BRAND := tecno
 PRODUCT_MODEL := Tecno Spark Go 2024
