@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/tecno/TECNO-BG6
+DEVICE_PATH := device/tecno/TECNO_BG6
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
