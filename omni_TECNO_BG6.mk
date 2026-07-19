@@ -5,12 +5,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Наследование базовых конфигураций AOSP (64-бит и телефония)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-# Подключаем конфигурацию самого устройства из device.mk
 $(call inherit-product, device/tecno/TECNO-BG6/device.mk)
 
 PRODUCT_NAME := omni_TECNO_BG6
