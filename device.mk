@@ -14,7 +14,7 @@ AB_OTA_POSTINSTALL_CONFIG += \
     POSTINSTALL_OPTIONAL_system=true
 
 # Устаревший статический HAL отключен
-# PRODUCT_STATIC_BOOT_CONTROL_HAL := \
+# PRODUCT_STATIC_BOOT_CONTROL_HAL := true
 #     bootctrl.ums9230 \
 #     libgptutils \
 #     libz \
