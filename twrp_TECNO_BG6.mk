@@ -9,7 +9,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-$(call inherit-product, device/tecno/TECNO-BG6/device.mk)
+$(call inherit-product, device/tecno/TECNO_BG6/device.mk)
 
 PRODUCT_NAME := twrp_TECNO_BG6
 PRODUCT_DEVICE := TECNO_BG6
