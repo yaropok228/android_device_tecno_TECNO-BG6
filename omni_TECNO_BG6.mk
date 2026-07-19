@@ -5,17 +5,15 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from those products. Most specific first.
+# Наследование базовых конфигураций AOSP (64-бит и телефония)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-# Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
-
-# Inherit from TECNO-BG6 device
+# Подключаем конфигурацию самого устройства из device.mk
 $(call inherit-product, device/tecno/TECNO-BG6/device.mk)
 
-PRODUCT_NAME := omni_TECNO_BG6
+PRODUCT_NAME := twrp_TECNO_BG6
 PRODUCT_DEVICE := TECNO_BG6
 PRODUCT_BRAND := tecno
 PRODUCT_MODEL := Tecno Spark Go 2024
